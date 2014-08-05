@@ -25,7 +25,7 @@ $ npm install --save-dev  parse-ft-spreadsheet-key
 ```
 
 ```js
-var parseSpreadsheetKey = require('parse-spreadsheet-key');
+var parseSpreadsheetKey = require('parse-ft-spreadsheet-key');
 ```
 
 
