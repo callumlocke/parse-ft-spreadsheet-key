@@ -1,6 +1,5 @@
 {
   "name": "parse-ft-spreadsheet-key",
-  "private": "true",
   "version": "0.0.1",
   "description": "Helper function for FT IG projects",
   "scripts": {
