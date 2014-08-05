@@ -42,3 +42,11 @@ Notes:
 * takes valid Bertha URL or Google Spreadsheets URL
 * if you pass a plain key on its own, it will return it untouched
 * throws an error if something invalid is found, unless you pass `true` as a second argument (`silent`), in which case it just returns null
+
+[![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
+
+[travis-url]: http://travis-ci.org/callumlocke/parse-ft-spreadsheet-key
+[travis-image]: https://secure.travis-ci.org/callumlocke/parse-ft-spreadsheet-key.png?branch=master
+
+[depstat-url]: https://david-dm.org/callumlocke/parse-ft-spreadsheet-key
+[depstat-image]: https://david-dm.org/callumlocke/parse-ft-spreadsheet-key.png
