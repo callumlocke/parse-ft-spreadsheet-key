@@ -1,0 +1,10 @@
+{
+  "name": "parse-ft-spreadsheet-key",
+  "version": "0.0.1",
+  "main": "index.js",
+  "ignore": [
+    "package.json",
+    "test.js",
+    ".npmignore"
+  ]
+}
