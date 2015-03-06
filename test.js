@@ -13,6 +13,17 @@ describe('parse-ft-spreadsheet-key', function () {
     'https://docs.google.com/a/ft.com/spreadsheet/ccc?key=' + key + '#hash',
     'https://docs.google.com/a/ft.com/spreadsheet/ccc?key=' + key + '&foo=bar',
     'https://docs.google.com/a/ft.com/spreadsheet/ccc?key=' + key + '&foo=bar#hash',
+
+    // new-style urls...
+    'https://docs.google.com/a/ft.com/spreadsheets/d/' + key,
+    'https://docs.google.com/a/ft.com/spreadsheets/d/' + key + '#gid=0',
+    'https://docs.google.com/a/ft.com/spreadsheets/d/' + key + '/edit',
+    'https://docs.google.com/a/ft.com/spreadsheets/d/' + key + '/edit#gid=0',
+
+    'https://docs.google.com/a/ft.com/spreadsheets/foo/' + key,
+    'https://docs.google.com/a/ft.com/spreadsheets/foo/' + key + '#gid=0',
+    'https://docs.google.com/a/ft.com/spreadsheets/foo/' + key + '/edit',
+    'https://docs.google.com/a/ft.com/spreadsheets/foo/' + key + '/edit#gid=0',
   ];
   var berthaURLs = [];
   ([

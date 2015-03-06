@@ -1,6 +1,6 @@
 # parse-ft-spreadsheet-key
 
-Simple function to get the key from a Google Spreadsheets URL or Bertha URL.
+Simple function to parse the spreadsheet key out from an FT Google Sheets URL or Bertha URL.
 
 
 ## install
@@ -32,7 +32,7 @@ var parseSpreadsheetKey = require('parse-ft-spreadsheet-key');
 ## usage
 
 ```js
-var key = parseSpreadsheetKey('https://docs.google.com/a/ft.com/spreadsheet/ccc?key=0Ajt08GcPGJRbdFJUZWZfZ6M1V0xDaTFBckJnNENC8Gc');
+var key = parseSpreadsheetKey('https://docs.google.com/a/ft.com/spreadsheets/d/0Ajt08GcPGJRbdFJUZWZfZ6M1V0xDaTFBckJnNENC8Gc/edit#gid=0');
 
 // key === '0Ajt08GcPGJRbdFJUZWZfZ6M1V0xDaTFBckJnNENC8Gc'
 ```
