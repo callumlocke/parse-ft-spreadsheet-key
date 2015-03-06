@@ -13,13 +13,25 @@
   var parseSpreadsheetKey = function (str, silent) {
     if (str.indexOf('http') === 0) {
       // Attempt to parse as Google URL
-      if (str.indexOf('https://docs.google.com') === 0)
+      if (str.indexOf('https://docs.google.com') === 0) {
+        if (str.indexOf('?key=') === -1) {
+          // It's a new-style URL.
+          return str.split(/ft.com\/spreadsheets\/[^\/]+\//)
+            .pop()
+            .split('/')[0]
+            .split('?')[0]
+            .split('#')[0]
+          ;
+        }
+
+        // It's an old-style URL.
         return (
           str.split('key=')
             .pop()
             .split('&')[0]
             .split('#')[0]
         );
+      }
 
       // Attempt to parse as Bertha URL
       var afterProtocol = str.split('//')[1];
