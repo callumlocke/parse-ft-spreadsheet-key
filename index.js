@@ -16,7 +16,7 @@
       if (str.indexOf('https://docs.google.com') === 0) {
         if (str.indexOf('?key=') === -1) {
           // It's a new-style URL.
-          return str.split(/ft.com\/spreadsheets\/[^\/]+\//)
+          return str.split(/\/spreadsheets\/[^\/]+\//)
             .pop()
             .split('/')[0]
             .split('?')[0]
