@@ -1,6 +1,6 @@
 {
   "name": "parse-ft-spreadsheet-key",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Helper function for FT IG projects",
   "scripts": {
     "test": "jshint *.js && mocha"
